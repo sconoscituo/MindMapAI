@@ -1,5 +1,6 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
+from app.middleware.security_headers import SecurityHeadersMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import init_db
 from app.routers import users, mindmaps, payments
